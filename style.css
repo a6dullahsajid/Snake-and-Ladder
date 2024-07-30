@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 50px; */
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+.left img{
+    width: 50px;
+}
+.left .logo{
+    margin-bottom: 120px;
+}
+.left .logo img{
+    width: 250px;
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.redplayer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.blueplayer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.markcounter{
+    display: flex;
+    gap: 60px;
+}
+.markcounter .point{
+    opacity: 0; 
+    width: 25px;
+    transition: 0.5s all ease-in-out;
+}
+.gameboard{
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/game_board.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 55vw;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 10%;
+}
+.box img{
+    width: 40px;
+}
+.redcounter{
+    opacity: 0;
+    transition: all 0.7s ease-out;
+}
+.bluecounter{
+    opacity: 0;
+    transition: all 0.7s ease-out;
+}
+.right{
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+.chance{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 30px;
+    font-family: fantasy;
+    padding:100px 0px;
+}
+.showchance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:lighter;
+    font-family: monospace;
+    font-size: 20px;
+}
+.showchance img{
+    width: 20px;
+}
+#dice{
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 0px 6px white;
+    border: 2px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    margin: 50px;
+}
+#dice:hover{
+    transform: scale(1.03);
+}
+.play{
+    height: 50px;
+    width: 75px;
+    font-size: 15px;
+    border-radius: 100px;
+    background-color: rgb(55, 238, 55);
+    color: whitesmoke;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.play:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 2px 1px rgb(55, 238, 55);
+}
+.restart{
+    height: 50px;
+    width: 75px;
+    font-size: 15px;
+    border-radius: 100px;
+    background-color: red;
+    color: whitesmoke;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.restart:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 2px 1px red;
+}
+@media (max-width:800px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        font-size: 5px;
+        font-weight: bold;
+        font-family: monospace;
+    }
+    .left img{
+        width: 15px;
+    }
+    .left .logo{
+        margin-bottom: 0px;
+    }
+    .left .logo img{
+        width: 150px;
+    }
+    .players{
+        display: flex;
+        width: 100%;
+        align-items: end;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .redplayer{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+    .blueplayer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+    .markcounter{
+        display: flex;
+        gap: 7px;
+    }
+    .markcounter .point{
+        opacity: 0; 
+        width: 7px;
+    }
+    .gameboard{
+        align-items: center;
+        justify-content: center;
+        background-image: url(assets/game_board.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        box-sizing: border-box;
+        margin-top: 0px;
+        height: 45vh;
+        width: 97%;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+        width: 10%;
+    }
+    .box img{
+        width: 18px;
+    }
+    .redcounter{
+        opacity: 0;
+    }
+    .bluecounter{
+        opacity: 0;
+    }
+    .right{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #dice{
+        background-color: aliceblue;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        height: 50px;
+        width: 50px;
+        box-shadow: 0px 0px 4px white;
+        border: 2px solid black;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+        margin: 10px;
+    }
+    #dice:hover{
+        transform: scale(1.03);
+    }
+    .play{
+        height: 22px;
+        width: 32px;
+        font-size: 8px;
+        border-radius: 100px;
+        background-color: rgb(55, 238, 55);
+        color: whitesmoke;
+        border: 1px solid black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+        margin-right: 10px;
+    }
+    .play:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 0px 2px 1px rgb(55, 238, 55);
+    }
+    .restart{
+        height: 22px;
+        margin-right: 10px;
+        width: 32px;
+        font-size: 6px;
+        border-radius: 100px;
+        background-color: red;
+        color: whitesmoke;
+        border: 1px solid black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+    }
+}
