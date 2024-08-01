@@ -199,7 +199,7 @@ function checkchance() {
         }
         movered();
         document.getElementsByClassName("redposition")[0].innerHTML=`Position:${redposition}`
-        }
+    }
     else if(bluechance %2 == 0){
         document.getElementsByClassName("point")[1].style.opacity = `0`;
         if (randnum == 6) {
