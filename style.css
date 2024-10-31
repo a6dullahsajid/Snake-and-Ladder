@@ -4,6 +4,7 @@
 }
 body{
     background-color: black;
+    font-family: 'Raleway', sans-serif;
     color: white;
     display: flex;
     justify-content: center;
@@ -15,17 +16,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* gap: 50px; */
+    justify-content: space-around;
     font-size: 20px;
     font-weight: bold;
-    font-family: monospace;
 }
 .left img{
     width: 50px;
-}
-.left .logo{
-    margin-bottom: 120px;
 }
 .left .logo img{
     width: 250px;
@@ -35,19 +31,19 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 40px;
 }
-.redplayer{
+.redplayer,.blueplayer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
     gap: 5px;
-}
-.blueplayer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
+    border-radius: 23px;
+    color: antiquewhite;
+    text-shadow: -2px 2px 4px rgba(93, 176, 189, 0.73);
+    background: #10000d;
+    box-shadow: inset 1px 1px 10px #a72a91, inset -1px -1px 10px #a72a91;
 }
 .markcounter{
     display: flex;
@@ -57,6 +53,10 @@ body{
     opacity: 0; 
     width: 25px;
     transition: 0.5s all ease-in-out;
+}
+.markcounter img:nth-child(2){
+    transform: rotateY(180deg);
+    filter: invert(1);
 }
 .gameboard{
     align-items: center;
@@ -108,7 +108,6 @@ body{
     flex-direction: column;
     gap: 5px;
     font-size: 30px;
-    font-family: fantasy;
     padding:100px 0px;
 }
 .showchance{
@@ -116,63 +115,94 @@ body{
     align-items: center;
     justify-content: center;
     font-weight:lighter;
-    font-family: monospace;
     font-size: 20px;
 }
 .showchance img{
     width: 20px;
 }
-#dice{
-    background-color: aliceblue;
+#dice {
+    background: linear-gradient(145deg, #c9e6f3, #ffffff); /* Soft gradient */
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family:'Times New Roman', Times, serif;
     font-weight: bold;
-    height: 50px;
-    width: 50px;
-    box-shadow: 0px 0px 6px white;
-    border: 2px solid black;
-    border-radius: 7px;
+    font-size: 1.5em;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #333;
+    border-radius: 12px; /* More rounded corners */
     cursor: pointer;
-    transition: all 0.5s ease-out;
+    transition: transform 0.1s ease, box-shadow 0.3s ease; /* Smooth transition on click */
     margin: 50px;
 }
-#dice:hover{
-    transform: scale(1.03);
+
+#dice:hover {
+    background: linear-gradient(145deg, #c9e6f3, #e6f7ff); /* Gradient shift on hover */
 }
-.play{
+
+#dice:active {
+    transform: scale(0.95);
+}
+
+.play {
+    /* margin-top: 20px; */
     height: 50px;
     width: 75px;
     font-size: 15px;
-    border-radius: 100px;
-    background-color: rgb(55, 238, 55);
-    color: whitesmoke;
-    border: 1px solid black;
     font-weight: bold;
+    font-family: 'Arial', sans-serif; /* Font style */
+    color: #ffffff; /* Text color to stand out on green */
+    background:rgb(41, 155, 41); /* Radial green gradient */
+    border: 1px solid rgba(20, 174, 22, 0.6); /* Defined border */
+    border-radius: 12px; /* Slightly sharper corners */
     cursor: pointer;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease;
+    box-shadow:-4px 2px 2px rgb(21, 106, 2),
+    -4px 2px 2px rgb(21, 106, 2);
+    text-transform: uppercase;
+    outline: none;
+    position: relative;
+    overflow: hidden;
 }
-.play:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 2px 1px rgb(55, 238, 55);
+
+.play:hover {
+    color: #e0ffe0; /* Lighter text on hover */
+    box-shadow: inset 0 4px 6px rgb(73, 206, 43);
+    transform: translate(2px , -2px);
 }
-.restart{
+
+.play:active {
+    transform: translateY(1px); /* Pressed effect */
+    box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.3), 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+.restart {
+    /* margin-top: 20px; */
     height: 50px;
     width: 75px;
     font-size: 15px;
-    border-radius: 100px;
-    background-color: red;
+    border-radius: 15px; /* Softer corners for a modern look */
+    background: linear-gradient(45deg, #cb2323, #c22c2c); /* Glossy red gradient */
+    box-shadow: -4px 4px 2px rgb(171, 23, 23),
+    -4px 4px 2px rgb(134, 9, 9);
     color: whitesmoke;
-    border: 1px solid black;
+    border: none; /* Removed border for a cleaner appearance */
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease;
 }
-.restart:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 2px 1px red;
+
+.restart:hover {
+    transform: translateX(5px); /* Slight scale effect */
+    
 }
+
+.restart:active {
+    transform: scale(0.95); /* Pressed effect */
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+}
+
 @media (max-width:800px) {
     body{
         display: flex;
@@ -181,7 +211,7 @@ body{
         align-items: center;
     }
     .left{
-        height: 25vh;
+        height: 27vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -189,7 +219,6 @@ body{
         justify-content:space-between;
         font-size: 5px;
         font-weight: bold;
-        font-family: monospace;
     }
     .left img{
         width: 15px;
@@ -198,7 +227,7 @@ body{
         margin-bottom: 0px;
     }
     .left .logo img{
-        width: 150px;
+        width: 120px;
     }
     .players{
         display: flex;
@@ -206,19 +235,23 @@ body{
         align-items: end;
         justify-content: space-between;
         flex-direction: row;
-    }
-    .redplayer{
+        margin-bottom: 2px;
+    }    
+    .redplayer,.blueplayer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        width: 30px;
         margin-left: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0px;
-    }
-    .blueplayer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0px;
+        gap: 2px;
+        border-radius: 5px;
+        border: 1px solid #5b0d4e;
+        color: antiquewhite;
+        text-shadow: -1px 1px 2px rgba(93, 176, 189, 0.73);
+        background: #10000d;
+        box-shadow: inset 1px 1px 4px #6d0b5b,
+                inset -1px -1px 4px #6d0b5b;
     }
     .markcounter{
         display: flex;
@@ -273,52 +306,52 @@ body{
         justify-content: center;
     }
     #dice{
-        background-color: aliceblue;
-        color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        height: 50px;
-        width: 50px;
-        box-shadow: 0px 0px 4px white;
-        border: 2px solid black;
-        border-radius: 7px;
+        font-size: 0.8em;
+        height: 40px;
+        width: 40px;
+        border: 2px solid white;
+        border-radius: 10px; 
         cursor: pointer;
-        transition: all 0.5s ease-out;
-        margin: 10px;
+    }    
+    #dice:hover {
+        background: linear-gradient(145deg, #c9e6f3, #e6f7ff); /* Gradient shift on hover */
     }
-    #dice:hover{
-        transform: scale(1.03);
+    #dice:active {
+        transform: scale(0.95);
     }
-    .play{
-        height: 22px;
-        width: 32px;
-        font-size: 8px;
-        border-radius: 100px;
-        background-color: rgb(55, 238, 55);
-        color: whitesmoke;
-        border: 1px solid black;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.5s ease-out;
+    .play {
         margin-right: 10px;
-    }
-    .play:hover{
-        transform: scale(1.05);
-        box-shadow: 0px 0px 2px 1px rgb(55, 238, 55);
+        height: 20px;
+        width: 35px;
+        font-size: 7px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: 'Arial', sans-serif; /* Font style */
+        color: #ffffff; /* Text color to stand out on green */
+        background:rgb(41, 155, 41); /* Radial green gradient */
+        border: 1px solid rgba(20, 174, 22, 0.6); /* Defined border */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow:-2px 1px 1px rgb(21, 106, 2),
+        -2px 2px 1px rgb(21, 106, 2);
+        text-transform: uppercase;
+        outline: none;
+        position: relative;
+        overflow: hidden;
     }
     .restart{
-        height: 22px;
+        height: 20px;
         margin-right: 10px;
-        width: 32px;
+        width: 35px;
         font-size: 6px;
-        border-radius: 100px;
-        background-color: red;
+        border-radius: 5px;
+        background: linear-gradient(45deg, #cb2323, #c22c2c); /* Glossy red gradient */
+        box-shadow: -2px 1px 1px rgb(171, 23, 23),
+        -2px 1px 1px rgb(134, 9, 9);
         color: whitesmoke;
-        border: 1px solid black;
+        border: 1px solid rgb(180, 44, 44); 
         font-weight: bold;
         cursor: pointer;
-        transition: all 0.5s ease-out;
+        transition: all 0.3s ease;
     }
 }

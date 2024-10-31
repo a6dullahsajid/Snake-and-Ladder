@@ -149,17 +149,19 @@ function bluechecksnakeorladder() {
 function checkwin() {
     if (blueposition == 100) {
         gamestart = 0;
-        document.getElementsByClassName("players")[0].innerHTML = `Blue Win
+        document.getElementsByClassName("players")[0].innerHTML = `Blue Wins
     <button class="restart" onclick="restart()">Restart</button>`;
         document.getElementsByClassName("players")[0].style.fontSize = `30px`;
         document.getElementsByClassName("players")[0].style.color = `blue`;
+        document.getElementsByClassName("players")[0].style.textShadow = `-1px 1px 1px white`;
     }
     if (redposition == 100) {
         gamestart = 0;
-        document.getElementsByClassName("players")[0].innerHTML = `Red Win
-    <button class="restart" onclick="restart()">Restart</button>`;
+        document.getElementsByClassName("players")[0].innerHTML = `Red Wins
+        <button class="restart" onclick="restart()">Restart</button>`;
         document.getElementsByClassName("players")[0].style.fontSize = `30px`;
         document.getElementsByClassName("players")[0].style.color = `red`;
+        document.getElementsByClassName("players")[0].style.textShadow = `-1px 1px 1px white`;
     }
 }
 function movered() {
