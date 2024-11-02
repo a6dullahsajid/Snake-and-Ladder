@@ -4,20 +4,842 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake and Ladder</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="left">
-      <div class="logo">
-        <img src="assets/Snake2.png" alt="">
+      <div class="top">
+        <div class="name">
+          <div class="snake">Snake</div>
+          <div class="and">&</div>
+          <div class="ladder">Ladder</div>
+        </div>
+        <div class="logo">
+          <img src="assets/Snake2.png" alt="" />
+        </div>
       </div>
+      <div class="gameboard">
+        <div class="container">
+          <div class="box box100">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box99">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box98">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box97">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box96">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box95">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box94">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box93">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box92">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box91">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box81">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box82">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box83">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box84">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box85">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box86">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box87">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box88">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box89">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box90">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box80">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box79">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box78">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box77">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box76">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box75">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box74">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box73">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box72">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box71">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box61">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box62">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box63">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box64">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box65">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box66">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box67">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box68">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box69">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box70">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box60">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box59">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box58">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box57">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box56">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box55">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box54">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box53">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box52">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box51">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box41">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box42">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box43">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box44">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box45">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box46">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box47">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box48">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box49">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box50">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box40">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box39">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box38">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box37">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box36">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box35">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box34">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box33">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box32">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box31">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box21">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box22">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box23">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box24">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box25">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box26">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box27">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box28">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box29">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box30">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box20">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box19">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box18">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box17">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box16">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box15">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box14">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box13">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box12">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box11">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box1">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box2">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box3">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box4">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box5">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box6">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box7">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box8">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box9">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+          <div class="box box10">
+            <img class="redcounter" src="assets/red.svg" alt="Red Image" />
+            <img
+              class="bluecounter"
+              src="assets/dark blue.svg"
+              alt="Dark Blue Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
       <div class="players">
         <div class="redplayer">
           <div class="markcounter">
             <img src="assets/red.svg" alt="" />
-            <img class="point" src="assets/point2.svg" alt="">
+            <img class="point" src="assets/point2.svg" alt="" />
           </div>
           <div class="redlock">Locked</div>
           <div class="redposition">Position:0</div>
@@ -25,7 +847,7 @@
         <div class="blueplayer">
           <div class="markcounter">
             <img src="assets/dark blue.svg" alt="" />
-            <img class="point" src="assets/point2.svg" alt="">
+            <img class="point" src="assets/point2.svg" alt="" />
           </div>
           <div class="bluelock">Locked</div>
           <div class="blueposition">Position:0</div>
@@ -34,813 +856,9 @@
           <button class="play">Play</button>
         </div>
       </div>
-    </div>
-    <div class="gameboard">
-      <div class="container">
-        <div class="box box100">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box99">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box98">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box97">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box96">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box95">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box94">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box93">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box92">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box91">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box81">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box82">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box83">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box84">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box85">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box86">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box87">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box88">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box89">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box90">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box80">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box79">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box78">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box77">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box76">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box75">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box74">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box73">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box72">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box71">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box61">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box62">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box63">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box64">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box65">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box66">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box67">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box68">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box69">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box70">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box60">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box59">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box58">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box57">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box56">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box55">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box54">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box53">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box52">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box51">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box41">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box42">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box43">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box44">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box45">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box46">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box47">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box48">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box49">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box50">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box40">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box39">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box38">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box37">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box36">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box35">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box34">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box33">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box32">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box31">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box21">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box22">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box23">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box24">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box25">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box26">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box27">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box28">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box29">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box30">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box20">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box19">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box18">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box17">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box16">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box15">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box14">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box13">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box12">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box11">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box1">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box2">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box3">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box4">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box5">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box6">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box7">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box8">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box9">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
-        <div class="box box10">
-          <img class="redcounter" src="assets/red.svg" alt="Red Image" />
-          <img
-            class="bluecounter"
-            src="assets/dark blue.svg"
-            alt="Dark Blue Image"
-          />
-        </div>
+      <div class="rightmost">
+        <div id="dice">Dice</div>
       </div>
-    </div>
-    <div class="right">
-      <div id="dice">Dice</div>
     </div>
     <script src="script.js"></script>
   </body>
